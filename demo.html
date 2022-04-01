@@ -2,200 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>多肉商城</title>
+    <title>桃子</title>
     <style type="text/css">
-        *{border: 0; padding: 0; margin: 0;}
-        body{
-            background-color: mintcream;
+        *{border: 0; padding: 0; margin: 0}
+        #act_wrapper{
+            margin: 10px auto;
+            width: 1146px;
+            height: 631px;
+            background: url("images/bg.jpg");
         }
-        header{
-            width: 1176px;
-            height: 480px;
-            margin: 0 auto;
-        }
-        #title{
-            width: 150px;
-            height: 50px;
-            background-color: mediumseagreen;
-            border-radius: 20px;
-            margin: 0 auto;
-            font-size: 22px;
-            color: white;
-            line-height: 50px;
-            text-align: center;
-        }
-        #main{
-            width: 950px;
-            height: 450px;
-            margin: 30px auto;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .view{
+        #act_content{
             width: 200px;
-            height: 200px;
-            border: 1px solid lightgray;
+            font-size: 26px;
+            font-weight: bold;
             position: relative;
-            overflow: hidden;
+            top: 70px;
+            left: 140px;
         }
-        .hover{
-            width: 200px;
-            background-color: rgba(0,0,0,0.6);
-            position: absolute;
-            top: 200px;
-            left: 0;
-            text-align: center;
-            color: white;
-            transform: rotate(0deg);
-            transition: all 0.5s;
-            z-index: 100;
-            line-height: 30px;
-        }
-        .view:hover .hover{
-            top: 110px;
+        .peach span{
+            display: block;
+            width: 90px;
             height: 90px;
-            transform: rotate(0deg);
+            background: url("images/peach.png") no-repeat;
         }
-        .view:before{
-            content: "";
-            position: absolute;
-            top: -200px;
-            right: 0;
-            width: 300px;
-            height: 300px;
-            background-color: rgba(133,203,190,0.5);
-            transform: rotate(45deg) translateX(0px);
-            transform-origin: 100% 0;
-            transition: all 0.5s ease;
+        .pe_1 span{
+            background-position: 0 0;
+            position: relative;
+            left: 512px;
+            top: 148px;
+            transform-origin: 50% 0 0;
+            animation: sway 3s ease-in-out infinite;
         }
-        .view:hover:before{
-            top: 0;
+        .pe_2 span{
+            background-position: 0 -110px;
+            position: relative;
+            left: 350px;
+            top: 120px;
+            transform-origin: 50% 0 0;
+            animation: sway 3s ease-in-out infinite;
+            animation-delay: 0.2s;
         }
-        .view:after{
-            content: "";
-            position: absolute;
-            bottom: -200px;
-            left: 0;
-            width: 360px;
-            height: 360px;
-            background-color: rgba(133,203,190,0.5);
-            transform: rotate(45deg) translateX(0px);
-            transform-origin: 0 100%;
-            transition: all 0.5s ease;
+        .pe_3 span{
+            background-position: 0 -220px;
+            position: relative;
+            left: 550px;
+            top: 80px;
+            transform-origin: 50% 0 0;
+            animation: sway 3s ease-in-out infinite;
+            animation-delay: 0.4s;
         }
-        .view:hover:after{
-            bottom: 0;
+        .pe_4 span{
+            background-position: 0 -330px;
+            position: relative;
+            left: 700px;
+            top: -80px;
+            transform-origin: 50% 0 0;
+            animation: sway 3s ease-in-out infinite;
+            animation-delay: 0.1s;
         }
-        #section{
-            width: 950px;
-            height: 130px;
-            background-color: mediumseagreen;
-            margin: 0 auto;
-            padding: 10px 10px;
-            border-radius: 10px;
+        .pe_5 span{
+            background-position: 0 -435px;
+            position: relative;
+            left: 680px;
+            top: 5px;
+            transform-origin: 50% 0 0;
+            animation: sway 3s ease-in-out infinite;
+            animation-delay: 0.25s;
         }
-        #section p{
-            font-size: 20px;
-            color: white;
-            text-indent: 2em;
+        .pe_6 span{
+            background-position: 0 -540px;
+            position: relative;
+            left: 850px;
+            top: -140px;
+            transform-origin: 50% 0 0;
+            animation: sway 3s ease-in-out infinite;
+            animation-delay: 0.5s;
         }
-        #footer{
-            height: 100px;
-            background-color: #f5f5f5;
-            padding-top: 10px;
-        }
-        #footer p{
-            font-family: "STXingkai";
-            text-align: center;
-            font-size: 30px;
-            color: mediumseagreen;
-            margin-top: 10px;
-        }
-        #footer_font{
-            height: 21px;
-            width: 281px;
-            margin: 25px auto;
+        @keyframes sway{
+            10% {
+                transform: rotate(10deg);
+            }
+            20% {
+                transform: rotate(-10deg);
+            }
+            30% {
+                transform: rotate(5deg);
+            }
+            40% {
+                transform: rotate(10deg);
+            }
+            50% {
+                transform: rotate(-10deg);
+            }
+            60% {
+                transform: rotate(0deg);
+            }
+            70% {
+                transform: rotate(10deg);
+            }
+            80% {
+                transform: rotate(-10deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
         }
     </style>
 </head>
 
 <body>
-<header>
-    <img src="images/head.jpg" alt="标语">
-</header>
-
-<div id="title">
-    <span>最新肉肉</span>
-</div>
-
-<div id="main">
-    <div class="view">
-        <img src="images/1.jpg" alt="商品图片">
-        <div class="hover">
-            <h3>多肉仙人掌</h3>
-            <p>多肉植物防辐射 肉肉植物花卉绿植盆栽</p>
+<div id="act_wrapper">
+    <div id="act_content">
+        <p>摇晃的桃子</p>
+    </div>
+    <div class="peach">
+        <div class="pe_1">
+            <span></span>
         </div>
     </div>
-    <div class="view">
-        <img src="images/2.jpg" alt="商品图片">
-        <div class="hover">
-            <h3>多肉仙人掌</h3>
-            <p>多肉植物防辐射 肉肉植物花卉绿植盆栽</p>
+    <div class="peach">
+        <div class="pe_2">
+            <span></span>
         </div>
     </div>
-    <div class="view">
-        <img src="images/3.jpg" alt="商品图片">
-        <div class="hover">
-            <h3>创意组合</h3>
-            <p>多肉组合盆栽净化空气办公桌礼物套餐</p>
+    <div class="peach">
+        <div class="pe_3">
+            <span></span>
         </div>
     </div>
-    <div class="view">
-        <img src="images/4.jpg" alt="商品图片">
-        <div class="hover">
-            <h3>创意组合</h3>
-            <p>多肉组合盆栽净化空气办公桌礼物套餐</p>
+    <div class="peach">
+        <div class="pe_4">
+            <span></span>
         </div>
     </div>
-    <div class="view">
-        <img src="images/5.jpg" alt="商品图片">
-        <div class="hover">
-            <h3>多肉仙人掌</h3>
-            <p>多肉植物防辐射 肉肉植物花卉绿植盆栽</p>
+    <div class="peach">
+        <div class="pe_5">
+            <span></span>
         </div>
     </div>
-    <div class="view">
-        <img src="images/6.jpg" alt="商品图片">
-        <div class="hover">
-            <h3>创意组合</h3>
-            <p>多肉组合盆栽净化空气办公桌礼物套餐</p>
+    <div class="peach">
+        <div class="pe_6">
+            <span></span>
         </div>
-    </div>
-    <div class="view">
-        <img src="images/7.jpg" alt="商品图片">
-        <div class="hover">
-            <h3>创意组合</h3>
-            <p>多肉组合盆栽净化空气办公桌礼物套餐</p>
-        </div>
-    </div>
-    <div class="view">
-        <img src="images/8.jpg" alt="商品图片">
-        <div class="hover">
-            <h3>创意组合</h3>
-            <p>多肉组合盆栽净化空气办公桌礼物套餐</p>
-        </div>
-    </div>
-</div>
-
-<div id="section">
-    <p>多肉植物是指植物营养器官肥大的高等植物，通常具根、茎、叶三种营养器官和花、果实、种子三种繁殖器官。 在园艺上，又称肉质植物或多肉花卉，但以多肉植物这个名称最为常用。 </p>
-    <p>多肉植物在中国也很常见， 如景天属、伽兰菜属的一些品种一般在农村的屋顶上也会出现，山野中也时有野生的块根种类，只不过中国人不太重视这些植物种类，没有开发成为商品。 现今韩国、日本等国家将他们培育出来销往世界各地。</p>
-</div>
-<div id="footer">
-    <p>偏安一偶 静静生活</p>
-    <div id="footer_font">
-        <span>品质保障|七天无理由退货|特色服务体验</span>
     </div>
 </div>
 </body>
