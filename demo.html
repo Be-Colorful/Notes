@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多肉商城</title>
+    <style type="text/css">
+        *{border: 0; padding: 0; margin: 0;}
+        body{
+            background-color: mintcream;
+        }
+        header{
+            width: 1176px;
+            height: 480px;
+            margin: 0 auto;
+        }
+        #title{
+            width: 150px;
+            height: 50px;
+            background-color: mediumseagreen;
+            border-radius: 20px;
+            margin: 0 auto;
+            font-size: 22px;
+            color: white;
+            line-height: 50px;
+            text-align: center;
+        }
+        #main{
+            width: 950px;
+            height: 450px;
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .view{
+            width: 200px;
+            height: 200px;
+            border: 1px solid lightgray;
+            position: relative;
+            overflow: hidden;
+        }
+        .hover{
+            width: 200px;
+            background-color: rgba(0,0,0,0.6);
+            position: absolute;
+            top: 200px;
+            left: 0;
+            text-align: center;
+            color: white;
+            transform: rotate(0deg);
+            transition: all 0.5s;
+            z-index: 100;
+            line-height: 30px;
+        }
+        .view:hover .hover{
+            top: 110px;
+            height: 90px;
+            transform: rotate(0deg);
+        }
+        .view:before{
+            content: "";
+            position: absolute;
+            top: -200px;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background-color: rgba(133,203,190,0.5);
+            transform: rotate(45deg) translateX(0px);
+            transform-origin: 100% 0;
+            transition: all 0.5s ease;
+        }
+        .view:hover:before{
+            top: 0;
+        }
+        .view:after{
+            content: "";
+            position: absolute;
+            bottom: -200px;
+            left: 0;
+            width: 360px;
+            height: 360px;
+            background-color: rgba(133,203,190,0.5);
+            transform: rotate(45deg) translateX(0px);
+            transform-origin: 0 100%;
+            transition: all 0.5s ease;
+        }
+        .view:hover:after{
+            bottom: 0;
+        }
+        #section{
+            width: 950px;
+            height: 130px;
+            background-color: mediumseagreen;
+            margin: 0 auto;
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+        #section p{
+            font-size: 20px;
+            color: white;
+            text-indent: 2em;
+        }
+        #footer{
+            height: 100px;
+            background-color: #f5f5f5;
+            padding-top: 10px;
+        }
+        #footer p{
+            font-family: "STXingkai";
+            text-align: center;
+            font-size: 30px;
+            color: mediumseagreen;
+            margin-top: 10px;
+        }
+        #footer_font{
+            height: 21px;
+            width: 281px;
+            margin: 25px auto;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <img src="images/head.jpg" alt="标语">
+</header>
+
+<div id="title">
+    <span>最新肉肉</span>
+</div>
+
+<div id="main">
+    <div class="view">
+        <img src="images/1.jpg" alt="商品图片">
+        <div class="hover">
+            <h3>多肉仙人掌</h3>
+            <p>多肉植物防辐射 肉肉植物花卉绿植盆栽</p>
+        </div>
+    </div>
+    <div class="view">
+        <img src="images/2.jpg" alt="商品图片">
+        <div class="hover">
+            <h3>多肉仙人掌</h3>
+            <p>多肉植物防辐射 肉肉植物花卉绿植盆栽</p>
+        </div>
+    </div>
+    <div class="view">
+        <img src="images/3.jpg" alt="商品图片">
+        <div class="hover">
+            <h3>创意组合</h3>
+            <p>多肉组合盆栽净化空气办公桌礼物套餐</p>
+        </div>
+    </div>
+    <div class="view">
+        <img src="images/4.jpg" alt="商品图片">
+        <div class="hover">
+            <h3>创意组合</h3>
+            <p>多肉组合盆栽净化空气办公桌礼物套餐</p>
+        </div>
+    </div>
+    <div class="view">
+        <img src="images/5.jpg" alt="商品图片">
+        <div class="hover">
+            <h3>多肉仙人掌</h3>
+            <p>多肉植物防辐射 肉肉植物花卉绿植盆栽</p>
+        </div>
+    </div>
+    <div class="view">
+        <img src="images/6.jpg" alt="商品图片">
+        <div class="hover">
+            <h3>创意组合</h3>
+            <p>多肉组合盆栽净化空气办公桌礼物套餐</p>
+        </div>
+    </div>
+    <div class="view">
+        <img src="images/7.jpg" alt="商品图片">
+        <div class="hover">
+            <h3>创意组合</h3>
+            <p>多肉组合盆栽净化空气办公桌礼物套餐</p>
+        </div>
+    </div>
+    <div class="view">
+        <img src="images/8.jpg" alt="商品图片">
+        <div class="hover">
+            <h3>创意组合</h3>
+            <p>多肉组合盆栽净化空气办公桌礼物套餐</p>
+        </div>
+    </div>
+</div>
+
+<div id="section">
+    <p>多肉植物是指植物营养器官肥大的高等植物，通常具根、茎、叶三种营养器官和花、果实、种子三种繁殖器官。 在园艺上，又称肉质植物或多肉花卉，但以多肉植物这个名称最为常用。 </p>
+    <p>多肉植物在中国也很常见， 如景天属、伽兰菜属的一些品种一般在农村的屋顶上也会出现，山野中也时有野生的块根种类，只不过中国人不太重视这些植物种类，没有开发成为商品。 现今韩国、日本等国家将他们培育出来销往世界各地。</p>
+</div>
+<div id="footer">
+    <p>偏安一偶 静静生活</p>
+    <div id="footer_font">
+        <span>品质保障|七天无理由退货|特色服务体验</span>
+    </div>
+</div>
+</body>
+</html>
